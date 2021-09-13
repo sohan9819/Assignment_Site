@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d6628b0a71.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div
+      class="
+        h-screen
+        bg-gray-900
+        font-mono
+        flex
+        justify-evenly
+        items-center
+        flex-col
+        text-white
+      "
+    >
+      <div>
+        <h2 class="text-center pt-1.5em">Gopal sir assignment</h2>
+        <h1 class="text-3xl text-center">Pre order and Post order</h1>
+      </div>
+      <div
+        class="
+          video-container
+          max-w-30
+          text-center
+          flex
+          justify-center
+          items-center
+        "
+      >
+        <video
+          style="width: 90%; height: auto; max-width: 600px"
+          width="400"
+          controls
+          id="myVideo"
+        >
+          <source src="./PreOrder_Post_order.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+
+    <script src="./createAmplifier.js"></script>
+    <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+    <script type="text/JavaScript">
+      // Make my video twice as loud as normal.
+      amplifyMedia(document.getElementById('myVideo'), 20);
+    </script>
+  </body>
+</html>
